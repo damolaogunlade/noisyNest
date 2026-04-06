@@ -381,7 +381,7 @@ end
 % close all
 
 %% Generate list of egg images
-cd('Z:\data\auditory_behavior\freq_discrimination\images')
+cd('//noisyNest\images')
 allFiles = dir(); 
 allFileNames = extractfield(allFiles,"name");
 eggFileNames = allFileNames(contains(allFileNames,"egg_"));
@@ -414,6 +414,6 @@ for i = 1:size(eggImgMat,1)
     end
 end
 
-%% Save stimulus matrix 
-% cd('Z:\data\auditory_behavior\freq_discrimination\code')
-% save("stim_mat.mat","stim_mat","corr_mat","condition_order","stim_dur","fs","dB_mat","SPL_dB_orig","SPL_dB_new","scaling_factors","stimuli_str","eggImgMat")
+% Save stimulus matrix 
+cd('\\noisyNest\code')
+save("stim_mat.mat","stim_mat","corr_mat","condition_order","stim_dur","fs","dB_mat","SPL_dB_orig","SPL_dB_new","scaling_factors","stimuli_str","eggImgMat")

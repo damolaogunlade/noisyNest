@@ -381,7 +381,7 @@ end
 % close all
 
 %% Generate list of egg images
-cd('//noisyNest\images')
+cd('\\noisyNest\images')
 allFiles = dir(); 
 allFileNames = extractfield(allFiles,"name");
 eggFileNames = allFileNames(contains(allFileNames,"egg_"));
